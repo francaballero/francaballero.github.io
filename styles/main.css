@@ -50,3 +50,19 @@ footer {
     text-align: left;
     font-family: "Open Sans", Helvetica;
 }
+.contact {
+	width: 800px;
+	text-align: center;
+	margin: auto;
+	margin-top: 10px;
+	padding: 20px 20px 20px 20px;
+}
+
+.contact h3 {
+	text-transform: uppercase;
+}
+
+.contact p {
+	font-size: 0.85em;
+	color: gray;
+}
