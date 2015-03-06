@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    display: table;
+    width: 100%;
+    color: gray;
+}
+
+header {
+    display: table-row;
+    background-color: #4d4d4d;
+    height: 200px;
+    color: white;
+    margin-top: -20px;
+    font-family: "Open Sans", Helvetica;
+}
+
+header h1 {
+    padding-top: 50px;
+    font-size: 4.5em;
+}
+
+#cuerpo {
+    display: table-row;
+    text-align: center;
+    font-family: "Open Sans", Helvetica;
+}
+
+.blue {
+    color: #308ddd;
+}
+
+.red {
+    color: #ef0034;
+}
+
+footer {
+    display: table-row;
+    margin-top: 4%;
+    height: 100px;
+    color: gray;
+    font-size: 0.9em;
+    text-align: left;
+    font-family: "Open Sans", Helvetica;
+}
