@@ -33,18 +33,18 @@ header {
 }
 header h3 {
   font-size: 2.6em;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 header z p {
   font-size: 1.1em;
-  margin-bottom: 35px;
   margin-top: -10px;
 }
 header ul {
   color: gray;
   font-size: 0.9em;
   list-style: none;
-  margin-top: 28px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: left;
 }
 .section-contact {
