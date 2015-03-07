@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Fran Caballero - Personal page</title>
-	<link rel="shortcut icon" href="">
+	<title>Fran Caballero - Software developer</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<!--[if IE]>
         <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
@@ -19,46 +21,73 @@
 
 <body>
 	<header>
-		<h1>fran<span style="font-weight: 900">caballero</span></h1>
-		<h4>software developer</h4>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<h3>fran<span style="font-weight: 600">caballero</span></h3>
+					<p>software developer</p>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-0"></div>
+				<div class="col-md-3 col-sm-2 col-xs-0"></div>
+				<div class="col-md-3 col-sm-4 col-xs-12">
+					<ul>
+						<li>22 years old</li>
+						<li>Software Engineering Student</li>
+						<li>University of Cadiz</li>
+						<li>Cadiz, Spain</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</header>
-	<section id="cuerpo">
-		<div class="contact">
+
+	<div class="white-bar"></div>
+	<div class="blue-bar"></div>
+	
+	<section class="parallax section-contact">
+		<div class="col-md-2 col-sm-2 col-xs-0"></div>
+		<div class="col-md-8 col-sm-8 col-xs-12 contact">
 			<h3>Contact</h3>
 			<hr>
-			<p>This site is currently under contruction, but you can still contact me.</p>
+			<p>This site is currently under contruction, but you can contact.</p>
 			<br>
-			<form name="myForm" action="scripts/form.php" method="post" onsubmit="return validateForm()">
-				<div>
-					<div class="form-group">
-						<input id="name" name="name" type="text" class="form-control" placeholder="Name (optional)">
-					</div>
-					<div class="form-group">
-						<input id="email" name="email" type="email" class="form-control" required placeholder="Contact details (example@example.com)">
-					</div>
-					<div class="form-group">
-						<input id="subject" name="subject" type="text" class="form-control" required placeholder="Subject">
-					</div>
-					<div class="form-group">
-						<textarea id="message" name="message" class="form-control" rows="10" required placeholder="Message"></textarea>
-					</div>
-					<button type="submit" class="btn btn-success btn-large">Submit</button>
+			<form enctype="multipart/form-data" name="myForm" action="scripts/form.php" method="POST" onsubmit="return validateForm()">
+				<div class="form-group">
+					<input id="name" name="name" type="text" class="form-control" placeholder="Name">
 				</div>
+				<div class="form-group input-group">
+					<span class="input-group-addon">@</span>
+					<input id="email" name="email" type="email" class="form-control" required placeholder="Contact e-mail *">
+				</div>
+				<div class="form-group">
+					<input id="subject" name="subject" type="text" class="form-control" required placeholder="Subject *">
+				</div>
+				<div class="form-group">
+					<textarea id="message" name="message" class="form-control" rows="10" required placeholder="Message *"></textarea>
+				</div>
+				<!-- MAX_FILE_SIZE must precede the file input field -->
+				<input type="hidden" name="MAX_FILE_SIZE" value="26214400" /> <!-- 26214400B == 25MB -->
+				<!-- -->
+				<div class="row form-group">
+					<div class="col-md-6 col-sm-6 col-xs-12 upload-form">
+						<!-- Name of input element determines name in $_FILES array -->
+						<input name="userfile" type="file" class="upload-file"/>
+						<!-- -->
+						<p>Up to 25MB.</p>
+						<p>Please note that huge files take longer to upload.</p>
+						<p>You can make a <strong>.zip</strong> to upload several files.</p>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12 form-about"> (*) Required.</div>
+				</div>
+				<div class="g-recaptcha form-group captcha" data-sitekey="6LcEJwMTAAAAAKF5TomEngSkJWIyoj27ZIN6JbxB"></div>
+				<button type="submit" class="btn btn-success btn-large">Submit</button>
 			</form>
 		</div>
+		<br>
+		<br>
+		<br>
 	</section>
-	<br><br><br>
-	<!--
-	<footer>
-		<br>
-		<br>
-		<br>
-		<div class="col-md-9 col-sm-9 col-xs-6"></div>
-		<div class="col-md-3 col-sm-3 col-xs-6" style="border-left: 1px solid #308ddd">
-			<a href="mailto:fjcc.92@gmail.com" style="padding-left: 15px">fjcc.92@gmail.com</a>
-		</div>
-	</footer>
-	-->
+	<div class="blue-bar"></div>
 	<script src="scripts/validation.js"></script>
 </body>
 

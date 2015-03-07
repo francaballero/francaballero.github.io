@@ -1,0 +1,134 @@
+.bar (@color, @height) {
+	background: @color;
+	height: @height;
+}
+
+html,
+body {
+	font-family: "Open Sans", Helvetica;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: gray;
+	width: 100%;
+}
+/**
+header {
+	display: table-row;
+	background-color: #4d4d4d;
+	height: 210px;
+	color: white;
+	margin-top: -20px;
+	font-family: "Open Sans", Helvetica;
+}
+
+header h1 {
+	padding-top: 50px;
+	font-size: 4.5em;
+}
+**/
+
+header {
+	background-color: #e9f2fc;
+	color: dimgray;
+	font-family: "Open Sans", Helvetica;
+	text-align: center;
+	h3 {
+		font-size: 2.6em;
+		margin-top: 35px;	
+	}
+	p {
+		font-size: 1.1em;
+		margin-bottom: 35px;
+		margin-top: -10px;
+	}
+	ul {
+		color: gray;
+		font-size: 0.9em;
+		list-style: none;
+		margin-top: 28px;
+		text-align: left;
+		
+	}
+}
+
+.section-contact {
+	background-attachment: fixed;
+	background-color: #8cbdff;
+	background-image: url("../images/bg.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: "Open Sans", Helvetica;
+	text-align: center;
+}
+
+footer {
+	font-family: "Open Sans", Helvetica;
+}
+
+.contact {
+	background: white;
+	border-radius: 10px;
+	margin: 60px auto 60px auto;
+	opacity: 0.81;
+	padding: 20px 0 25px 0;
+	text-align: center;
+	h3 {
+		text-transform: uppercase;
+	}
+	p {
+		color: gray;
+		font-size: 0.85em;
+	}
+	.form-group {
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+}
+
+.blue-bar {
+	.bar(#205590, 1px);
+}
+
+.white-bar {
+	.bar(#f2f5f9, 1px);
+}
+
+.upload-form {
+	color: darkgray;
+	font-size: 0.8em;
+	margin: 0 0 20px -15px;
+	text-align: left;
+	p {
+		margin-bottom: -1px;
+	}
+}
+.upload-file {
+	color: gray;
+	font-size: 1.1em;
+	margin-bottom: 10px;
+}
+
+.form-about {
+	color: darkgray;
+	font-size: 0.75em;
+	margin: 0 -50px 5px 0;
+	text-align: right;
+}
+
+.captcha {
+	margin-bottom: 5px;
+	min-height: 79px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: 50% 0;
+	overflow: hidden;
+	width: 100%;
+}
